@@ -335,7 +335,7 @@ $$
 ---
 
 Vamos a considerar una parametrización para el borde espacial, otra para la condición inicial y finalmente para los puntos del interior. Podemos visualizar esto en el siguiente diagrama 
-![Las cruces simbolizan la parametrización del borde espacial, los círculos el borde temporal, y los triangulos los puntos del interior.](ruta/a/la/imagen.png)
+![Las cruces simbolizan la parametrización del borde espacial, los círculos el borde temporal, y los triangulos los puntos del interior.](images/clase8.jpeg)
 
 ## Función de costo total
 
