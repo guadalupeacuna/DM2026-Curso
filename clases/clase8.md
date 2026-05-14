@@ -123,7 +123,7 @@ donde:
 
 Recordemos que
 
-$$\left\| \left\|  \theta \right\| \right\|_1=\sum_{i=1}^{p} |\theta_i|$$
+$$\left\| \left\|  \theta \right\| \right\|_1=\sum_{i=1}^{p} ||\theta_i||$$
 
 Entonces,
 
@@ -135,31 +135,20 @@ $$\theta^\ast=
 
 puede reinterpretarse como
 
-$$\theta^\ast=
-\arg\min_{\theta} \left\{
-\begin{aligned}
-& \left\| \left\| y-x\theta \right\| \right\|_2^2 \\
-&\text{sujeto a } \left\| \left\| \theta  \right\| \right\|_1 \leq C(\lambda)
-\end{aligned} \right.$$
+$$\theta^\ast = \arg\min_{\theta} \left\| \left\| y-x\theta \right\| \right\|_2^2 \quad \text{sujeto a} \quad \|\| \theta\|\|_1 \leq C(\lambda)$$
+
+
 ---
 
 # Problema relajado
 
 Tomemos el problema (1) y escribámoslo como:
 
-$$\min_{\theta,x} \mathcal{L}(\theta,x)=f(\theta,x)
-\qquad (3)$$
+$$\min_{\theta,x} \mathcal{L}(\theta,x)=f(\theta,x) \qquad (3)$$
 
 sujeto a
 
-$$\left\| \left\|
-\frac{dx}{dt}
--
-f(x,t,\theta)
-\right\| \right\|_2
-=
-\varepsilon
-\qquad \forall t$$
+$$\left\| \left\| \frac{dx}{dt} - f(x,t,\theta) \right\| \right\|_2 = \varepsilon \qquad \forall t$$
 
 y
 
@@ -211,17 +200,7 @@ $$
 Por ejemplo, una red neuronal puede escribirse como:
 
 $$
-x(t)
-=
-\sigma\!\left(
-W_3\,
-\sigma\!\left(
-W_2\,
-\sigma(W_1 t)+b_2
-\right)
-+b_3
-\right)
-$$
+x(t) = \sigma \left( W_3 \sigma \left( W_2 \sigma(W_1 t)+b_2\right) +b_3 \right) $$
 
 ---
 
